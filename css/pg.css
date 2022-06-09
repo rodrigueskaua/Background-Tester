@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+body{
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 1.3;
+    font-size: 50px;
+    margin-top: 10px;
+    letter-spacing: -.8px;
+    text-transform: capitalize;
+}
+
+
+
+#drag_me {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+}
+
+
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.bloco {
+  float: left;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 0px 5px black;
+  width: 128px;
+  height: 128px;
+  background-image: url('http://image.flaticon.com/icons/svg/96/96958.svg');
+  background-size: calc(100% - 10px);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.draggable {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transition: transform 0.3s linear z-index 0.3 linear;
+  z-index: 0;
+}
+
+.dragging {
+  transform: scale(1.1);
+  z-index: 999;
+}
